@@ -23,10 +23,10 @@ int main(int argc, char *argv[])
   int res_x, res_y;
   getmaxyx(screen, res_y, res_x);    
   
-  mvwprintw(screen, 0, 0, "Vyber scenu:");
+  mvwprintw(screen, 0, 0, "Select scene:");
   mvwprintw(screen, 1, 0, "~~~~~~~~~~~~");
-  mvwprintw(screen, 3, 0, "1. Snehuliak");
-  mvwprintw(screen, 4, 0, "2. Kyvadlo");
+  mvwprintw(screen, 3, 0, "1. Snowman");
+  mvwprintw(screen, 4, 0, "2. Pendulum");
   wrefresh(screen);
   
   while (!(key == '1' || key == '2')) key = getchar();
